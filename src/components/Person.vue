@@ -4,6 +4,7 @@
               <img class="mx-auto rounded-circle" :src="require(`@/assets/img/${img}`)" alt="">
               <h4>{{name}}</h4>
               <p class="text-muted">{{role}}</p>
+              <p> </p>
             </div>
           </div>
 </template>

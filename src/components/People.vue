@@ -8,9 +8,10 @@
           </div>
         </div>
         <div class="row">
-            <Person name="Petra Roman" img="team/1.jpg" role= "team member"></Person>
-            <Person name="Mirec" img="team/2.jpg" role= "team member"></Person>
-            <Person name="Misko" img="team/3.jpg" role= "team member"></Person>
+            <Person name="Petra" img="team/Petra.jpg" role= "team member"></Person>
+            <Person name="Brunik" img="team/Bruno.jpg" role= "Team Leader"></Person>
+            <Person name="Mirec" img="team/Mirec.jpg" role= "team member"></Person>
+            <Person name="Michal" img="team/Michal.jpg" role= "team member"></Person>
         </div>
         </div>
         <div class="row">
