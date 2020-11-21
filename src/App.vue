@@ -2,7 +2,7 @@
   <div id="app">
 
     <!-- Navigation -->
-    <!-- <Navigation></Navigation> -->
+    <Navigation></Navigation>
 
     <!-- Header -->
     <Header></Header>
@@ -28,7 +28,7 @@
 <script>
 
 import Portfolio from './components/Portfolio'
-// import Navigation from './components/Navigation'
+import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Services from './components/Services'
 import About from './components/About'
@@ -39,7 +39,7 @@ export default {
   name: 'app',
   components: {
     Portfolio,
-    // Navigation,
+    Navigation,
     Header,
     Services,
     About,
