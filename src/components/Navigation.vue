@@ -1,8 +1,8 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" v-bind:class="{navbackground: scrollPosition > 692}">
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto"  v-bind:class="{headerclass: scrollPosition < 630, bodyclass: scrollPosition > 630}">
+          <ul class="navbar-nav text-uppercase ml-auto" v-bind:class="{headerclass: scrollPosition < 630, bodyclass: scrollPosition > 630}">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Plan</a>
             </li>
@@ -62,6 +62,9 @@ color: black !important;
 }
 .bodyclass .nav-item .nav-link:hover{
 color: #fed136!important;
+}
+.navbackground{
+background-image: linear-gradient(rgba(232, 245, 225, 1), rgba(232, 245, 225, 0)) !important;
 }
 .nav-link{
   font-weight: bolder !important;
