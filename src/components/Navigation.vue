@@ -51,25 +51,31 @@ export default {
 </script>
 
 <style lang="css">
-.headerclass .nav-item .nav-link{
-color: white;
+@media (max-width: 1050px){
+  #mainNav{
+    display: none;
+  }
 }
-.headerclass .nav-item .nav-link:hover{
-color: #fed136;
-}
-.bodyclass .nav-item .nav-link{
-color: black !important;
-}
-.bodyclass .nav-item .nav-link:hover{
-color: #fed136!important;
-}
-.navbackground{
-background-image: linear-gradient(rgba(232, 245, 225, 1), rgba(232, 245, 225, 0)) !important;
-}
-.nav-link{
-  font-weight: bolder !important;
-  z-index: 1;
-}
+  .headerclass .nav-item .nav-link{
+  color: white;
+  }
+  .headerclass .nav-item .nav-link:hover{
+  color: #fed136;
+  }
+  .bodyclass .nav-item .nav-link{
+  color: black !important;
+  }
+  .bodyclass .nav-item .nav-link:hover{
+  color: #fed136!important;
+  }
+  .navbackground{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(232, 245, 225, 0)) !important;
+  }
+  .nav-link{
+    font-weight: bolder !important;
+    z-index: 1;
+  }
+
 </style>
 
 
