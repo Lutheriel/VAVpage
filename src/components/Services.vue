@@ -3,8 +3,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Plan</h2>
+            <h3 class="section-subheading text-muted">Tu bude mozno rozpis tem alebo tak, neviem, treba dat pekny nazov na header DOMYSLIET</h3>
           </div>
         </div>
         <div class="row text-center">

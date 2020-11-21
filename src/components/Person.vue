@@ -4,7 +4,7 @@
               <img class="mx-auto rounded-circle" :src="require(`@/assets/img/${img}`)" alt="">
               <h4>{{name}}</h4>
               <p class="text-muted">{{role}}</p>
-              <p> </p>
+              <p class="text-dark">{{desc}}</p>
             </div>
           </div>
 </template>
@@ -15,7 +15,8 @@ export default {
   props: {
       name: String,
       img: String,
-      role: String
+      role: String,
+      desc: String
   }
 }
 </script>

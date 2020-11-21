@@ -3,15 +3,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h2 class="section-heading text-uppercase">Guests</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
         <div class="row">
-            <Person name="Petra" img="team/Petra.jpg" role= "team member"></Person>
-            <Person name="Brunik" img="team/Bruno.jpg" role= "Team Leader"></Person>
+            <Person name="Petra" img="team/Petra.jpg" role= "team member" desc="mala by som ist spat"></Person>
+            <Person name="Brunik" img="team/Bruno.jpg" role= "Team Leader" desc="daj pls pripomienky nech ich co najskor zapracujem"></Person>
             <Person name="Mirec" img="team/Mirec.jpg" role= "team member"></Person>
-            <Person name="Michal" img="team/Michal.jpg" role= "team member"></Person>
+            <Person name="Michal" img="team/Michal.jpg" role= "team member" desc="test testin testing really hardo"></Person>
         </div>
         </div>
         <div class="row">

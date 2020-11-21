@@ -10,14 +10,14 @@
     <!-- Services -->
     <Services></Services>
 
+        <!-- People -->
+    <People></People>
+
     <!-- Portfolio Grid -->
     <Portfolio></Portfolio>
 
     <!-- About -->
     <About></About>
-  
-    <!-- People -->
-    <People></People>
 
     <!-- Footer -->
     <Footer></Footer>
