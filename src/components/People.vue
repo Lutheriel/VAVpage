@@ -23,14 +23,31 @@
 </template>
 
 <script>
-
+const axios = require('axios');
 import Person from './Person'
 export default {
   name: 'People',
   components: {
       Person
+  },
+  methods: {
+    mounted(){
+      axios.get('/guests')
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+    }
   }
 }
+
 </script>
 
 <style lang="css">
