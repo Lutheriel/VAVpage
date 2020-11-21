@@ -35,7 +35,9 @@ export default {
 </script>
 
 <style lang="css">
-
+ #portfolio {
+  background-color: #fae1e4;
+}
 </style>
 
 

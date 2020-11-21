@@ -44,7 +44,9 @@ export default {
 </script>
 
 <style lang="css">
-
+section {
+  background-color:#e8f5e1;
+}
 </style>
 
 
