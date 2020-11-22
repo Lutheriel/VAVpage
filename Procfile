@@ -1,3 +1,5 @@
 web: npm run serve
 web: cd backend
-web: node strapi start
+web: npm install strapi
+web: strapi start
+web: cd ..
