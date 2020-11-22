@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "name": "Header",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "toptitle": {
+      "type": "string"
+    },
+    "maintitle": {
+      "type": "string"
+    }
+  }
+}

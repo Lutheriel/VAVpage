@@ -1,22 +1,29 @@
 <template>
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Our Page!</div>
-          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        </div>
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">{{ data.toptitle }}</div>
+        <div class="intro-heading text-uppercase">{{ data.maintitle }}</div>
       </div>
-    </header>
+    </div>
+  </header>
 </template>
 
 <script>
+const axios = require("axios");
 export default {
-  name: 'Header'
-}
+  name: "Header",
+  data: function() {
+    return {
+      data: [],
+    };
+  },
+  mounted() {
+    axios.get(process.env.VUE_APP_BASE_URL + "/header").then((response) => {
+      this.data = response.data;
+    });
+  },
+};
 </script>
 
-<style lang="css">
-
-</style>
-
-
+<style lang="css"></style>

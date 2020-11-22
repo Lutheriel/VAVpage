@@ -1,23 +1,19 @@
 <template>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <span class="copyright">Copyright &copy; Your Website 2020</span>
-          </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <span class="copyright">Copyright &copy; Your Website 2020</span>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer'
-}
+  name: "Footer",
+};
 </script>
 
-<style lang="css">
-
-</style>
-
-
+<style lang="css"></style>

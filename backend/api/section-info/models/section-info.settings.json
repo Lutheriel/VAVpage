@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_infos",
+  "info": {
+    "name": "SectionInfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "planinfo": {
+      "type": "text"
+    },
+    "guestsinfo": {
+      "type": "text"
+    },
+    "photosinfo": {
+      "type": "text"
+    },
+    "aboutinfo": {
+      "type": "text"
+    }
+  }
+}

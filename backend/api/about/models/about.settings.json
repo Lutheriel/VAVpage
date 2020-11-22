@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "guests",
+  "collectionName": "abouts",
   "info": {
-    "name": "Guest",
+    "name": "About",
     "description": ""
   },
   "options": {
@@ -11,10 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "year": {
       "type": "string"
     },
-    "role": {
+    "title": {
       "type": "string"
     },
     "text": {
@@ -30,6 +30,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "toright": {
+      "type": "boolean"
     }
   }
 }

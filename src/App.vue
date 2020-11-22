@@ -1,57 +1,65 @@
 <template>
   <div id="app">
-
     <!-- Navigation -->
     <Navigation></Navigation>
 
     <!-- Header -->
     <Header></Header>
 
-    <!-- Services -->
-    <Services></Services>
+    <!-- Plans -->
+    <Plans :about="data.planinfo"></Plans>
 
-        <!-- People -->
-    <People></People>
+    <!-- People -->
+    <People :about="data.guestsinfo"></People>
 
     <!-- Portfolio Grid -->
-    <Portfolio></Portfolio>
+    <Portfolio :about="data.photosinfo"></Portfolio>
 
     <!-- About -->
-    <About></About>
+    <About :about="data.aboutinfo"></About>
 
     <!-- Footer -->
     <Footer></Footer>
-
   </div>
 </template>
 
 <script>
-
-import Portfolio from './components/Portfolio'
-import Navigation from './components/Navigation'
-import Header from './components/Header'
-import Services from './components/Services'
-import About from './components/About'
-import People from './components/People'
-import Footer from './components/Footer'
+const axios = require("axios");
+import Portfolio from "./components/Portfolio";
+import Navigation from "./components/Navigation";
+import Header from "./components/Header";
+import Plans from "./components/Plans";
+import About from "./components/About";
+import People from "./components/People";
+import Footer from "./components/Footer";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Portfolio,
     Navigation,
     Header,
-    Services,
+    Plans,
     About,
     People,
-    Footer
-  }
-}
+    Footer,
+  },
+  data: function() {
+    return {
+      data: [],
+    };
+  },
+  mounted() {
+    axios.get(process.env.VUE_APP_BASE_URL + "/section-info").then((response) => {
+      this.data = response.data;
+    });
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
