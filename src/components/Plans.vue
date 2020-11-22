@@ -36,7 +36,7 @@ export default {
     };
   },
   mounted() {
-    axios.get(process.env.VUE_APP_BASE_URL + "/plans").then((response) => {
+    axios.get(process.env.HEROKU_APP_NAME + "/plans").then((response) => {
       this.data = response.data;
     });
   },

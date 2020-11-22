@@ -45,11 +45,11 @@ export default {
   data: function() {
     return {
       data: [],
-      preUrl: process.env.VUE_APP_BASE_URL,
+      preUrl: process.env.HEROKU_APP_NAME,
     };
   },
   mounted() {
-    axios.get(process.env.VUE_APP_BASE_URL + "/abouts").then((response) => {
+    axios.get(process.env.HEROKU_APP_NAME + "/abouts").then((response) => {
       this.data = response.data;
     });
   },

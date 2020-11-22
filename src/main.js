@@ -7,7 +7,7 @@ import "./assets/css/bootstrap.css";
 
 Vue.config.productionTip = false;
 Vue.use(VueAxios, axios);
-// axios.defaults.baseURL = 'process.env.VUE_APP_BASE_URL';
+// axios.defaults.baseURL = 'process.env.HEROKU_APP_NAME';
 
 new Vue({
   render: (h) => h(App),
