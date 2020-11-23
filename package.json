@@ -1,51 +1,39 @@
 {
-  "name": "hello-world",
-  "version": "0.1.0",
+  "name": "backend",
   "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "start": "npm run serve"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
-    "axios": "^0.21.0",
-    "is-obj": "^2.0.0",
-    "nuxt": "^2.14.7",
-    "vue": "^2.5.17",
-    "vue-axios": "^3.2.0"
+    "knex": "<0.20.0",
+    "pg": "^8.5.1",
+    "pg-connection-string": "^2.4.0",
+    "sqlite3": "latest",
+    "strapi": "3.2.0-beta.1",
+    "strapi-admin": "3.2.0-beta.1",
+    "strapi-connector-bookshelf": "3.2.0-beta.1",
+    "strapi-plugin-content-manager": "3.2.0-beta.1",
+    "strapi-plugin-content-type-builder": "3.2.0-beta.1",
+    "strapi-plugin-email": "3.2.0-beta.1",
+    "strapi-plugin-upload": "3.2.0-beta.1",
+    "strapi-plugin-users-permissions": "3.2.0-beta.1",
+    "strapi-utils": "3.2.0-beta.1"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.0",
-    "@vue/cli-service": "^4.5.9",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17"
+  "author": {
+    "name": "A Strapi developer"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
+  "strapi": {
+    "uuid": "4937b799-5360-485c-b698-3ef4a2051cbb"
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "license": "MIT"
 }
