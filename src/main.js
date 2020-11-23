@@ -5,9 +5,10 @@ import VueAxios from "vue-axios";
 import "./assets/css/styles.css";
 import "./assets/css/bootstrap.css";
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 Vue.use(VueAxios, axios);
-// axios.defaults.baseURL = 'process.env.HEROKU_APP_NAME';
+axios.defaults.baseURL = process.env.VUE_APP_API;
+debugger
 
 new Vue({
   render: (h) => h(App),

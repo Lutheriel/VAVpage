@@ -50,7 +50,7 @@ export default {
     };
   },
   mounted() {
-    axios.get(process.env.HEROKU_APP_NAME + "/section-info").then((response) => {
+    axios.get("/section-info").then((response) => {
       this.data = response.data;
     });
   },

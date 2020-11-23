@@ -36,11 +36,11 @@ export default {
   data: function() {
     return {
       data: [],
-      preUrl: process.env.HEROKU_APP_NAME,
+      preUrl: process.env.VUE_APP_API,
     };
   },
   mounted() {
-    axios.get(process.env.HEROKU_APP_NAME + "/guests").then((response) => {
+    axios.get("/guests").then((response) => {
       this.data = response.data;
     });
   },

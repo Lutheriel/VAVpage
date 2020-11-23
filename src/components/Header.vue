@@ -19,7 +19,7 @@ export default {
     };
   },
   mounted() {
-    axios.get(process.env.HEROKU_APP_NAME + "/header").then((response) => {
+    axios.get("/header").then((response) => {
       this.data = response.data;
     });
   },
