@@ -1,7 +1,4 @@
 {
-  "parserOptions": {
-    "parser": "babel-eslint"
-  },
   "extends": "eslint:recommended",
   "env": {
     "commonjs": true,
@@ -10,6 +7,7 @@
     "browser": false
   },
   "parserOptions": {
+    "parser": "babel-eslint",
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
       "jsx": false
