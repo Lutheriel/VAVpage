@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "vav-page",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -7,9 +7,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "serve": "vue-cli-service serve"
   },
-  "devDependencies": {},
   "dependencies": {
     "knex": "<0.20.0",
     "pg": "^8.5.1",
@@ -23,11 +23,49 @@
     "strapi-plugin-email": "3.2.0-beta.1",
     "strapi-plugin-upload": "3.2.0-beta.1",
     "strapi-plugin-users-permissions": "3.2.0-beta.1",
-    "strapi-utils": "3.2.0-beta.1"
+    "strapi-utils": "3.2.0-beta.1",
+    "axios": "^0.21.0",
+    "is-obj": "^2.0.0",
+    "nuxt": "^2.14.7",
+    "vue": "^2.5.17",
+    "vue-axios": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-service": "^4.5.9",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "vue-template-compiler": "^2.5.17"
   },
   "author": {
     "name": "A Strapi developer"
   },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "strapi": {
     "uuid": "4937b799-5360-485c-b698-3ef4a2051cbb"
   },

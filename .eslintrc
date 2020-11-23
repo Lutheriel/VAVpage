@@ -1,5 +1,7 @@
 {
-  "parser": "babel-eslint",
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
   "extends": "eslint:recommended",
   "env": {
     "commonjs": true,
