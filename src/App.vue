@@ -11,12 +11,13 @@
 
     <!-- People -->
     <People :about="data.guestsinfo"></People>
-
-    <!-- Portfolio Grid -->
-    <Portfolio :about="data.photosinfo"></Portfolio>
-
+    
     <!-- About -->
     <About :about="data.aboutinfo"></About>
+
+    <!-- Portfolio Grid -->
+    <!-- <Portfolio :about="data.photosinfo"></Portfolio> -->
+
 
     <!-- Footer -->
     <Footer></Footer>
@@ -25,7 +26,7 @@
 
 <script>
 const axios = require("axios");
-import Portfolio from "./components/Portfolio";
+// import Portfolio from "./components/Portfolio";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import Plans from "./components/Plans";
@@ -36,7 +37,7 @@ import Footer from "./components/Footer";
 export default {
   name: "app",
   components: {
-    Portfolio,
+    // Portfolio,
     Navigation,
     Header,
     Plans,

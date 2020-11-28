@@ -19,9 +19,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Guests</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Photos</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
