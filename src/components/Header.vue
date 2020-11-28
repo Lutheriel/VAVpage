@@ -39,7 +39,4 @@ export default {
 </script>
 
 <style lang="css">
-/* .backgroundImage{
-  background-image:url(../assets/img/header-bg-copy.jpg) !important
-} */
 </style>
