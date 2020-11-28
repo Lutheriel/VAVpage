@@ -21,7 +21,7 @@
             ></AboutPart>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h3><br /><br />2020 <br /></h3>
+                <h3 class= "now">2020 </h3>
               </div>
             </li>
           </ul>
@@ -56,4 +56,20 @@ export default {
 };
 </script>
 
-<style lang="css"></style>
+<style lang="css">
+@media (min-width: 950px) {
+.now{
+  margin: auto;
+  margin-top: revert;
+  padding-top: 32px;
+}
+}
+@media (max-width: 950px) {
+.now{
+  margin: auto;
+  margin-top: revert;
+  font-size: 22px !important;
+}
+}
+
+</style>
