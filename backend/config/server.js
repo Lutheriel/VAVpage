@@ -1,9 +1,8 @@
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
+  url: 'https://vav.gta.sk/api',
   admin: {
-    auth: {
-      secret: env('ADMIN_JWT_SECRET', '507bf037dc7b5f29489ebcb238d81ae2'),
-    },
+    url: 'https://vav.gta.sk/admin',
   },
 });
