@@ -11,13 +11,13 @@
         <div class="col-lg-12">
           <ul class="timeline">
             <AboutPart
-              v-for="about in data"
+              v-for="(about, index) in data"
               :key="about.id"
               :time="about.year"
               :text="about.text"
               :heading="about.title"
               :img="preUrl + about.img.url"
-              :toright="about.toright"
+              :toright="setIsRight(index)"
             ></AboutPart>
             <li class="timeline-inverted">
               <div class="timeline-image">
@@ -46,6 +46,7 @@ export default {
     return {
       data: [],
       preUrl: process.env.VUE_APP_API,
+      toright: false
     };
   },
   mounted() {
@@ -53,6 +54,11 @@ export default {
       this.data = response.data;
     });
   },
+  methods: {
+    setIsRight: function(index){
+      return index % 2 == 0;
+    }
+  }
 };
 </script>
 

@@ -30,9 +30,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "toright": {
-      "type": "boolean"
     }
   }
 }
