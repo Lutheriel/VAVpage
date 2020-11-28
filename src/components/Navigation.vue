@@ -18,14 +18,13 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Guests</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Photos</a>
-          </li> -->
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+           </li>
           <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li> -->
