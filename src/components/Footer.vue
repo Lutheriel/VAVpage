@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <span class="copyright">Copyright &copy; Your Website 2020</span>
+          <span class="copyright">Copyright &copy; GTA VAV 2020</span>
         </div>
       </div>
     </div>
