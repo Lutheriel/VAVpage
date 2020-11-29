@@ -8,7 +8,7 @@ import router from './router'
 
 Vue.config.productionTip = true;
 Vue.use(VueAxios, axios);
-axios.defaults.baseURL = process.env.VUE_APP_API;
+axios.defaults.baseURL = process.env.VUE_APP_API + '/api';
 
 new Vue({
   router,
