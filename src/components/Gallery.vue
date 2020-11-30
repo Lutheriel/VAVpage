@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     imagesUrl(){
-        return JSON.parse(localStorage.getItem('photos')).map(image => process.env.VUE_APP_API + image.url);
+        return JSON.parse(localStorage.getItem('photos')).map(image => process.env.VUE_APP_API + "api/" + image.url);
     }
   }
 };

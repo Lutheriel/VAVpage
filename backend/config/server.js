@@ -3,6 +3,9 @@ module.exports = ({ env }) => ({
   port: env.int('PORT', 1337),
   url: 'https://vav.gta.sk/api',
   admin: {
-    url: 'https://vav.gta.sk/admin',
+    url: '/admin',
+    auth: {
+        secret: 'PetraCoSiNamToSpravila',
+    },
   },
 });
