@@ -17,7 +17,7 @@ export default {
     return {
       data: [],
       isBackground: false,
-      preUrl: process.env.VUE_APP_API,
+      preUrl: process.env.VUE_APP_API + '/api',
     };
   },
   mounted() {

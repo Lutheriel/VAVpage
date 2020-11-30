@@ -19,13 +19,13 @@ export default {
   data: function() {
     return {
       images: JSON.parse(localStorage.getItem('photos')),
-      preUrl: process.env.VUE_APP_API,
+      preUrl: process.env.VUE_APP_API + '/api',
       index: null
     };
   },
   computed: {
     imagesUrl(){
-        return JSON.parse(localStorage.getItem('photos')).map(image => process.env.VUE_APP_API + "api/" + image.url);
+        return JSON.parse(localStorage.getItem('photos')).map(image => process.env.VUE_APP_API + '/api' + image.url);
     }
   }
 };

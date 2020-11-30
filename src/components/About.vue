@@ -45,7 +45,7 @@ export default {
   data: function() {
     return {
       data: [],
-      preUrl: process.env.VUE_APP_API,
+      preUrl: process.env.VUE_APP_API + '/api',
       toright: false
     };
   },
