@@ -5,7 +5,7 @@
               <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">{{title}}</h4>
-            <p class="text-muted">{{text}}</p>
+            <p class="">{{text}}</p>
           </div>
 </template>
 
@@ -20,6 +20,7 @@ export default {
 </script>
 
 <style lang="css">
+
 </style>
 
 

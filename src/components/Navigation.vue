@@ -14,16 +14,16 @@
           }"
         >
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Plan</a>
+            <a class="nav-link js-scroll-trigger" href="#services">VAV</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Guests</a>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Guests</a> -->
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">O projekte</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+            <a class="nav-link js-scroll-trigger" href="#gallery">Galéria</a>
            </li>
           <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -71,15 +71,15 @@ export default {
   color: #fed136;
 }
 .bodyclass .nav-item .nav-link {
-  color: black !important;
+  color: white !important;
 }
 .bodyclass .nav-item .nav-link:hover {
   color: #fed136 !important;
 }
 .navbackground {
   background-image: linear-gradient(
-    rgba(255, 255, 255, 0.9),
-    rgba(232, 245, 225, 0)
+    rgba(0, 104, 56, 0.4),
+    rgba(0, 104, 56, 0)
   ) !important;
 }
 .nav-link {

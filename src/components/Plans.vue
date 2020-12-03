@@ -3,29 +3,40 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Plan</h2>
-          <h3 class="section-subheading text-muted">{{ about }}</h3>
+          <md-card md-with-hover>
+              <md-card-header>
+                <div class="md-title">
+                  <h2 class="section-heading text-uppercase">VAV</h2>
+                </div>
+              </md-card-header>
+
+              <md-card-content>
+                <h3 class="section-subheading">{{ about }}</h3>
+                <img class="resize" src="../assets/img/brunik.jpg" alt="VAV" />
+              </md-card-content>
+          </md-card>
         </div>
       </div>
-      <div class="row text-center">
+
+      <!-- <div class="row text-center">
         <Plan
           v-for="plan in data"
           :key="plan.id"
           :title="plan.title"
           :text="plan.text"
         ></Plan>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
 
 <script>
 const axios = require("axios");
-import Plan from "./Plan";
+// import Plan from "./Plan";
 export default {
   name: "Plans",
   components: {
-    Plan,
+    // Plan,
   },
   props: {
     about: String,
@@ -44,7 +55,14 @@ export default {
 </script>
 
 <style lang="css">
-section {
-  background-color: #e8f5e1;
+.md-card {
+  background-color: rgba(232, 230, 211, 0.8) !important;
+}
+#services .md-card:hover{
+transform: scale(1.025);
+}
+img.resize {
+  max-width: 60%;
+  max-height: 60%;
 }
 </style>

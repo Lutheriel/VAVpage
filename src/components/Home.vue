@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-      <router-view />
+      <!-- <router-view /> -->
     <div>
       <!-- Navigation -->
     <Navigation></Navigation>
@@ -12,7 +12,7 @@
     <Plans :about="data.planinfo"></Plans>
 
     <!-- People -->
-    <People :about="data.guestsinfo"></People>
+    <!-- <People :about="data.guestsinfo"></People> -->
     
     <!-- About -->
     <About :about="data.aboutinfo"></About>
@@ -35,7 +35,7 @@ import Navigation from "./Navigation";
 import Header from "./Header";
 import Plans from "./Plans";
 import About from "./About";
-import People from "./People";
+// import People from "./People";
 import Footer from "./Footer";
 
 export default {
@@ -46,7 +46,7 @@ export default {
     Header,
     Plans,
     About,
-    People,
+    // People,
     Footer,
   },
   data: function() {
@@ -64,7 +64,12 @@ export default {
 </script>
 
 <style>
+.md-theme-default :not(input):not(textarea)::selection {
+  background-color: #fed136 !important;
+}
 #home {
+  background-image: url("../assets/img/background/raster1-11.jpg");
+  background-size: cover;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -84,4 +89,5 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>

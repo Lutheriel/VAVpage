@@ -1,5 +1,5 @@
 <template>
-  <header class="masthead" v-bind:style="[ isBackground ? backgroundImage: '']">
+  <header class="masthead">
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">{{ data.toptitle }}</div>

@@ -1,5 +1,5 @@
 <template>
-  <li v-bind:class="[toright ? 'timeline-inverted' : '', errorClass]">
+  <li v-bind:class="[toright ? 'timeline-inverted' : '']">
     <div class="timeline-image">
       <img
         class="rounded-circle img-fluid"
@@ -13,7 +13,7 @@
         <h4 class="subheading">{{ heading }}</h4>
       </div>
       <div class="timeline-body">
-        <p class="text-muted">{{ text }}</p>
+        <p class="">{{ text }}</p>
       </div>
     </div>
   </li>
